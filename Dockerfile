@@ -16,6 +16,7 @@ RUN git clone --verbose https://github.com/Ditmanson/mlm.git .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+RUN cat requirements.txt
 
 # Expose the port Gunicorn will run on
 EXPOSE 8000

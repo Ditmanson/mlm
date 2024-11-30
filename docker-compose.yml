@@ -4,9 +4,7 @@ services:
   # Django app service
   django:
     build: .
-    container_name: mountainlionmovies
-    volumes:
-      - .:/app
+    container_name: mlm
     expose:
       - "8000"  # This exposes the app on port 8000 but does not map to the host
     environment:
